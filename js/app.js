@@ -72,7 +72,7 @@ document.addEventListener('DOMContentLoaded', ()=> {
 
         if(is_open_menu) {                      // Si on ouvre le menu
             toggle_btn.style.setProperty('--backColorToggleHeader', '#000000' );
-            console.log('ouvert');
+
 
             // DECOMENT
             main_content_site.style.visibility = "hidden";
@@ -80,7 +80,7 @@ document.addEventListener('DOMContentLoaded', ()=> {
         }
         else if( window.scrollY == 0) {         // Si on ferme le menu et qu'on est à scroll 0
             toggle_btn.style.setProperty('--backColorToggleHeader', '#ffffff' );
-            console.log('Fermé');
+   
 
             // DECOMENT
             main_content_site.style.visibility = "visible";
@@ -209,7 +209,6 @@ document.addEventListener('DOMContentLoaded', ()=> {
             }
             else {                          // En noir si le scroll > 0
                 
-                // console.log("Mettre le header en blanc et les items en noir");
                 toggle_btn.style.setProperty('--backColorToggleHeader', '#000000' );
 
 
