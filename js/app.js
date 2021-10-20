@@ -1,4 +1,23 @@
+const logo_header_black = document.querySelector('.logo_header_black');
+const logo_header_white = document.querySelector('.logo_header_white');
 
+ 
+ // ----------------------- CHANGE LOGO MOBILE
+    if (window.innerWidth <= 770) {
+        logo_header_black.src = 'img/mobile/home/header/logo/audemars-piguet-logo-mini-blue.svg' ;
+        logo_header_white.src = 'img/mobile/home/header/logo/audemars-piguet-logo-mini-white.svg' ;
+    }
+
+    window.addEventListener('resize', ()=> {
+        if (window.innerWidth <= 770) {
+            logo_header_black.src = 'img/mobile/home/header/logo/audemars-piguet-logo-mini-blue.svg' ;
+            logo_header_white.src = 'img/mobile/home/header/logo/audemars-piguet-logo-mini-white.svg' ;
+        }
+        else {
+            logo_header_black.src = 'img/desktop/home/header/logo/audemars-piguet-logo-blue.svg' ;
+            logo_header_white.src = 'img/desktop/home/header/logo/audemars-piguet-logo-white.svg' ;
+        }
+    })  
 
 
 
@@ -6,8 +25,6 @@
 document.addEventListener('DOMContentLoaded', ()=> {
 
 
-    const logo_header_black = document.querySelector('.logo_header_black');
-    const logo_header_white = document.querySelector('.logo_header_white');
 
 
     const header = document.querySelector('.header');
@@ -36,35 +53,6 @@ document.addEventListener('DOMContentLoaded', ()=> {
 
 
     const all_footer_title_menu_nav = document.querySelectorAll('.footer_title_menu_nav');
-
-
-
-
-
-    // ----------------------- CHANGE LOGO MOBILE
-    if (window.innerWidth <= 770) {
-        logo_header_black.src = '../img/mobile/home/header/logo/audemars-piguet-logo-mini-blue.svg' ;
-        logo_header_white.src = '../img/mobile/home/header/logo/audemars-piguet-logo-mini-white.svg' ;
-    }
-
-    window.addEventListener('resize', ()=> {
-        if (window.innerWidth <= 770) {
-            logo_header_black.src = '../img/mobile/home/header/logo/audemars-piguet-logo-mini-blue.svg' ;
-            logo_header_white.src = '../img/mobile/home/header/logo/audemars-piguet-logo-mini-white.svg' ;
-        }
-        else {
-            logo_header_black.src = '../img/desktop/home/header/logo/audemars-piguet-logo-blue.svg' ;
-            logo_header_white.src = '../img/desktop/home/header/logo/audemars-piguet-logo-white.svg' ;
-        }
-    })
-
-
-
-
-
-
-
-
 
 
 
